@@ -1,7 +1,7 @@
 "use strict";
 
 var dns = require('dns'),//https://nodejs.org/dist/latest-v4.x/docs/api/dns.html
-    sp = require('../lib/sp');
+    sp = require('simple-series-parallel');
 
 
 dns.lookup('www.google.com', function(err, res1){

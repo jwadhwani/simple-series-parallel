@@ -1,6 +1,6 @@
 "use strict";
 
-var sp = require('../lib/sp');
+var sp = require('simple-series-parallel');
 //tale of three timers
 
 //delay 100ms

@@ -46,7 +46,7 @@ Example: _simple-series.js_:
 ```js
 "use strict";
 
-var sp = require('../lib/sp');
+var sp = require('simple-series-parallel');
 //tale of three timers
 
 //delay 100ms
@@ -115,7 +115,7 @@ Example: _simple-series-args-1.js_:
 "use strict";
 
 var dns = require('dns'),//https://nodejs.org/dist/latest-v4.x/docs/api/dns.html
-    sp = require('../lib/sp');
+    sp = require('simple-series-parallel');
 
 //bind in the arguments
 var fns = [
@@ -141,7 +141,7 @@ Example: _simple-series-args-2.js_:
 "use strict";
 
 var dns = require('dns'),//https://nodejs.org/dist/latest-v4.x/docs/api/dns.html
-    sp = require('../lib/sp');
+    sp = require('simple-series-parallel');
 
 //passing in an array = [function, context, host name]
 var fns = [
