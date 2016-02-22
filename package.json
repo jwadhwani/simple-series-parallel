@@ -1,0 +1,30 @@
+{
+  "name": "simple-series-parallel",
+  "version": "1.0.0",
+  "description": "A minimalist utility module for running functions in series or parallel",
+  "main": "index.js",
+  "scripts": {
+    "compile": "babel --source-maps -d lib/ src/",
+    "prepublish": "npm run compile",
+    "test": "make test"
+  },
+  "author": "Jayesh Wadhwani",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-preset-es2015": "^6.5.0",
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {
+  },
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jwadhwani/simple-series-parallel.git"
+  },
+  "engines" : { "node" : ">=0.10.3" }
+}
