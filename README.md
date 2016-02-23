@@ -2,8 +2,6 @@
 
 A minimalist utility module for running async functions in series or parallel
 
-> ***This module is under development and is not ready for use.***
-
 > ***This module is currently supported only on NodeJS.***
 
 ## Installation
