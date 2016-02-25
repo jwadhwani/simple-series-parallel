@@ -2,3 +2,4 @@
 .idea/
 /scratch
 /perf-test
+/npm-debug.log
