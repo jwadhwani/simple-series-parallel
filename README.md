@@ -3,6 +3,7 @@
 A minimalist utility module for running async functions in series or parallel
 
 [![Build Status](https://travis-ci.org/jwadhwani/simple-series-parallel.svg?branch=master)](https://travis-ci.org/jwadhwani/simple-series-parallel)
+[![NPM version](http://img.shields.io/npm/v/simple-series-parallel.svg)](https://www.npmjs.org/package/simple-series-parallel)
 [![Coverage Status](https://coveralls.io/repos/jwadhwani/simple-series-parallel/badge.svg)](https://coveralls.io/r/jwadhwani/simple-series-parallel)
 
 
