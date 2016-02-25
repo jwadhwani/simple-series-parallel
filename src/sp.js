@@ -16,6 +16,11 @@ sp - true for series, false for parallel
 
 var seriesParallel = function (fns, callback, sp) {
 
+    //validation - callback needs to be a callable function
+    if (typeof(callback) !== "function") {
+        throw new Error('"callback" should be a function');
+    }
+
     //should be an array
     if (!utils.isArray(fns)) {
         return callback(new Error('"fns" should be an array'));
@@ -31,11 +36,6 @@ var seriesParallel = function (fns, callback, sp) {
         if(!utils.isArray(fns[i]) && (typeof(fns[i]) !== "function")){
             return callback(new Error('An element should be either a function or an array. The element at index: ' + i + ' is neither'));
         }
-    }
-
-    //more validation - callback needs to be a callable function
-    if (typeof(callback) !== "function") {
-        return callback(new Error('"callback" should be a function'));
     }
 
     setImmediate((fns, callback) => {

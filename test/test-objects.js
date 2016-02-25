@@ -1,6 +1,6 @@
 "use strict";
 
-const should = require('chai').should(),
+var should = require('chai').should(),
     sp = require('../lib/sp');
 
 describe('Test objects', function(){
@@ -21,7 +21,7 @@ describe('Test objects', function(){
 
         LettersNumbers.prototype._getOneChar = function() {
 
-            let l = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ',
+            var l = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ',
                 n = '0123456789',
                 c = '';
 
@@ -35,11 +35,11 @@ describe('Test objects', function(){
         };
 
         LettersNumbers.prototype.make = function(callback){
-            let that = this;
+            var that = this;
 
             setTimeout(function(){
-                let s = '';
-                for(let i = 0; i < that._quantity; i++){
+                var s = '';
+                for(var i = 0; i < that._quantity; i++){
                     s += that._getOneChar();
                 }
                 callback(null, s.length);
@@ -82,7 +82,7 @@ describe('Test objects', function(){
 
         LettersNumbers.prototype._getOneChar = function () {
 
-            let l = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ',
+            var l = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ',
                 n = '0123456789',
                 c = '';
 
@@ -96,11 +96,11 @@ describe('Test objects', function(){
         };
 
         LettersNumbers.prototype.make = function (callback) {
-            let that = this;
+            var that = this;
 
             setTimeout(function () {
-                let s = '';
-                for (let i = 0; i < that._quantity; i++) {
+                var s = '';
+                for (var i = 0; i < that._quantity; i++) {
                     s += that._getOneChar();
                 }
                 callback(null, s.length);

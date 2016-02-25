@@ -209,6 +209,20 @@ describe('series tests', function () {
             done();
         });
     });
+    it('should fail as the callback is not a function', function (done) {
+        "use strict";
+
+        var fns = [],
+            callback = "badCallback";
+
+        try{
+            sp.series(fns, callback);
+        }catch(e){
+            (e.message).should.equal('"callback" should be a function');
+            done();
+        }
+
+    });
 });
 
 
