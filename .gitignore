@@ -2,4 +2,5 @@
 .idea/
 /scratch
 /perf-test
+/coverage
 /npm-debug.log
