@@ -1,6 +1,6 @@
 "use strict";
 
-const should = require('chai').should(),
+var should = require('chai').should(),
     sp = require('../lib/sp');
 
 describe('Recursive', function(){
@@ -21,7 +21,7 @@ describe('Recursive', function(){
 
         LettersNumbers.prototype._getOneChar = function() {
 
-            let l = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ',
+            var l = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ',
                 n = '0123456789',
                 c = '';
 
@@ -35,11 +35,11 @@ describe('Recursive', function(){
         };
 
         LettersNumbers.prototype.make = function(callback){
-            let that = this;
+            var that = this;
 
             setTimeout(function(){
-                let s = '';
-                for(let i = 0; i < that._quantity; i++){
+                var s = '';
+                for(var i = 0; i < that._quantity; i++){
                     s += that._getOneChar();
                 }
                 callback(null, s.length);
@@ -53,7 +53,7 @@ describe('Recursive', function(){
             fns2 = [],
             fns3 = [];
 
-        for(let i = 1, j = 11, k = 21; i < 10; i++, j++, k++){
+        for(var i = 1, j = 11, k = 21; i < 10; i++, j++, k++){
             objs1.push(new LettersNumbers('L', i++));
             objs1.push(new LettersNumbers('N', i));
 
@@ -64,7 +64,7 @@ describe('Recursive', function(){
             objs3.push(new LettersNumbers('N', k));
         }
 
-        for(let j = 0; j < objs1.length; j++){
+        for(var j = 0; j < objs1.length; j++){
             fns1.push(objs1[j].make.bind(objs1[j]));
             fns2.push(objs2[j].make.bind(objs2[j]));
             fns3.push(objs3[j].make.bind(objs3[j]));
@@ -106,7 +106,7 @@ describe('Recursive', function(){
 
         LettersNumbers.prototype._getOneChar = function() {
 
-            let l = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ',
+            var l = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ',
                 n = '0123456789',
                 c = '';
 
@@ -120,11 +120,11 @@ describe('Recursive', function(){
         };
 
         LettersNumbers.prototype.make = function(callback){
-            let that = this;
+            var that = this;
 
             setTimeout(function(){
-                let s = '';
-                for(let i = 0; i < that._quantity; i++){
+                var s = '';
+                for(var i = 0; i < that._quantity; i++){
                     s += that._getOneChar();
                 }
                 callback(null, s.length);
@@ -138,7 +138,7 @@ describe('Recursive', function(){
             fns2 = [],
             fns3 = [];
 
-        for(let i = 1, j = 11, k = 21; i < 10; i++, j++, k++){
+        for(var i = 1, j = 11, k = 21; i < 10; i++, j++, k++){
             objs1.push(new LettersNumbers('L', i++));
             objs1.push(new LettersNumbers('N', i));
 
@@ -149,7 +149,7 @@ describe('Recursive', function(){
             objs3.push(new LettersNumbers('N', k));
         }
 
-        for(let j = 0; j < objs1.length; j++){
+        for(var j = 0; j < objs1.length; j++){
             fns1.push(objs1[j].make.bind(objs1[j]));
             fns2.push(objs2[j].make.bind(objs2[j]));
             fns3.push(objs3[j].make.bind(objs3[j]));
@@ -191,7 +191,7 @@ describe('Recursive', function(){
 
         LettersNumbers.prototype._getOneChar = function() {
 
-            let l = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ',
+            var l = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ',
                 n = '0123456789',
                 c = '';
 
@@ -205,11 +205,11 @@ describe('Recursive', function(){
         };
 
         LettersNumbers.prototype.make = function(callback){
-            let that = this;
+            var that = this;
 
             setTimeout(function(){
-                let s = '';
-                for(let i = 0; i < that._quantity; i++){
+                var s = '';
+                for(var i = 0; i < that._quantity; i++){
                     s += that._getOneChar();
                 }
                 callback(null, s.length);
@@ -223,7 +223,7 @@ describe('Recursive', function(){
             fns2 = [],
             fns3 = [];
 
-        for(let i = 1, j = 11, k = 21; i < 10; i++, j++, k++){
+        for(var i = 1, j = 11, k = 21; i < 10; i++, j++, k++){
             objs1.push(new LettersNumbers('L', i++));
             objs1.push(new LettersNumbers('N', i));
 
@@ -234,7 +234,7 @@ describe('Recursive', function(){
             objs3.push(new LettersNumbers('N', k));
         }
 
-        for(let j = 0; j < objs1.length; j++){
+        for(var j = 0; j < objs1.length; j++){
             fns1.push(objs1[j].make.bind(objs1[j]));
             fns2.push(objs2[j].make.bind(objs2[j]));
             fns3.push(objs3[j].make.bind(objs3[j]));
