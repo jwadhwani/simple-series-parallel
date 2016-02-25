@@ -1,6 +1,6 @@
 {
   "name": "simple-series-parallel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A minimalist utility module for running functions in series or parallel",
   "main": "index.js",
   "scripts": {
